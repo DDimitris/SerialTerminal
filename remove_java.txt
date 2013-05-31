@@ -20,3 +20,7 @@ Search for possible remaining Java directories:
 sudo updatedb
 sudo locate -b '\pack200'
 If the command above produces any output like /path/to/jre1.6.0_34/bin/pack200 remove the directory that is parent of bin, like this: sudo rm -rf /path/to/jre1.6.0_34.
+
+after if you install eclipse and you have problem with UnsatisfiedLinkError run:
+
+ln -s /usr/lib/jni/libswt-* ~/.swt/lib/linux/x86/
